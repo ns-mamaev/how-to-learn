@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Научиться учиться</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body>
   <div class="page">
     <header class="header">
-      <img src="images/logo_place_footer.svg" alt="Яндекс.Практикум" class="logo logo_place_header">
+      <img src="images/logo_place_header.svg" alt="Яндекс.Практикум" class="logo logo_place_header">
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?
         <a class="header__link" href="#techniques">Узнать &rarr;</a>
@@ -36,7 +36,7 @@
       </section>
       <section class="techniques" id="techniques">
         <h2 class="section-title">Техники обучения</h2>
-        <h3 class="section-subtitle">Пять практик от Барбары Оакли</h3>
+        <p class="section-subtitle">Пять практик от Барбары Оакли</p>
         <ul class="cards">
           <li class="cards__item">
             <h4 class="cards__title">Два вида внимания</h4>
@@ -67,28 +67,24 @@
       </section>
       <section class="video">
         <h2 class="section-title">Видео на TED</h2>
-        <h3 class="section-subtitle">Для тех, кто любит прокрастинировать</h3>
+        <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
         <ul class="video__iframes">
-          <li class="video__iframe">
-            <iframe 
-              width="560" 
-              height="315" 
-              src="https://www.youtube.com/embed/5MgBikgcWnY" 
-              title="YouTube video player" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          <li class="video__iframe-wrapper">
+            <iframe class="video__iframe"
+              src="https://www.youtube.com/embed/5MgBikgcWnY"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen>
             </iframe>
           </li>
-          <li class="video__iframe">
-            <iframe 
-              width="515" 
-              height="316" 
-              src="https://www.youtube.com/embed/arj7oStGLkU" 
-              title="YouTube video player" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          <li class="video__iframe-wrapper">
+            <iframe class="video__iframe"
+              src="https://www.youtube.com/embed/arj7oStGLkU"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen>
             </iframe>
-           </li>   
+           </li>
           </ul>
       </section>
       <section class="oakley">
@@ -108,7 +104,7 @@
       </section>
       <section class="digits">
         <h2 class="section-title">Цифры и факты</h2>
-        <h3 class="section-subtitle">Про учёбу и мозг</h3>
+        <p class="section-subtitle">Про учёбу и мозг</p>
         <ul class="table">
           <li class="table__cell">
             <h4 class="table__heading">86 миллиардов</h4>
@@ -153,18 +149,18 @@
           <blockquote class="khan__quote">
             Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.
           </blockquote>
-          <p class="khan__quote-author">Джордж Лукас</p>
+          <h3 class="khan__quote-author">Джордж Лукас</h3>
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
             <img src="./images/khan-book.jpg" alt="Весь мир школа" class="khan__book-pic">
             <a href="https://www.ozon.ru/product/ves-mir-shkola-preobrazovannoe-obrazovanie-162999126/?sh=FgL_moEpEA"
              class="khan__buy-link" target="_blank">Купить книгу &rarr;</a>
-          </div>  
+          </div>
         </div>
       </section>
       <section class="kaufman" id="kaufman">
         <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
-        <h3 class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</h3>
+        <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
         <ul class="table table_theme_dark">
           <li class="table__cell table__cell_theme_dark">
             <h4 class="table__heading">1</h4>
@@ -211,21 +207,29 @@
       </section>
       <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
-        <h3 class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</h3>
-        <div class="resources__logo-zone">
-          <a href="https://arzamas.academy/" class="resources__link" target="_blank">
-            <img class="resources__logo" src="./images/resources-arzamas.svg" alt="Арзамас">
-          </a>
-          <a href="https://nplus1.ru/" class="resources__link" target="_blank">
-            <img class="resources__logo" src="./images/resources-n1.svg" alt="Н Плюс">
-          </a>
-          <a href="https://strelka.com/ru" class="resources__link" target="_blank">
-            <img class="resources__logo" src="./images/resources-strelka.svg" alt="Стрелка">
-          </a>
-          <a href="https://polka.academy/" class="resources__link" target="_blank">
-            <img class="resources__logo" src="./images/resources-polka.svg" alt="Полка">
-          </a>
-        </div>
+        <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
+        <ul class="resources__logo-zone">
+          <li class="resources__resource">
+            <a href="https://arzamas.academy/" class="resources__link" target="_blank">
+              <img class="resources__logo" src="./images/resources-arzamas.svg" alt="Арзамас">
+            </a>
+          </li>
+          <li class="resources__resource">
+            <a href="https://nplus1.ru/" class="resources__link" target="_blank">
+              <img class="resources__logo" src="./images/resources-n1.svg" alt="Н Плюс">
+            </a>
+          </li>
+          <li class="resources__resource">
+            <a href="https://strelka.com/ru" class="resources__link" target="_blank">
+              <img class="resources__logo" src="./images/resources-strelka.svg" alt="Стрелка">
+            </a>
+          </li>
+          <li class="resources__resource">
+            <a href="https://polka.academy/" class="resources__link" target="_blank">
+              <img class="resources__logo" src="./images/resources-polka.svg" alt="Полка">
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="footer">
@@ -233,7 +237,7 @@
         <div class="footer__column footer__column_content_copyright">
           <img class="logo logo_place_footer" src="images/logo_place_footer.svg" alt="Яндекс.Практикум">
           <p class="footer__author">&copy;2022. Никита Мамаев</p>
-        </div>  
+        </div>
         <div class="footer__column footer__column_content_info">
           <h4 class="footer__column-heading">О Практикуме</h4>
           <nav class="footer__column-links">
@@ -241,7 +245,7 @@
             <a class="footer__column-link" href="#">Концепция</a>
             <a class="footer__column-link" href="#">Наставники</a>
           </nav>
-        </div>  
+        </div>
         <div class="footer__column footer__column_content_social">
           <h4 class="footer__column-heading">Соцсети</h4>
           <nav class="footer__column-links">
@@ -259,7 +263,7 @@
             </a>
           </nav>
         </div>
-      </div>  
+      </div>
     </footer>
   </div>
 </body>
